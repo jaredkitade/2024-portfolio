@@ -1,12 +1,225 @@
-.cursor{
+:root {
+	--brand-color-01: #32C8AA;
+	--neutral: #FFFAF0;
+	--black: #191919;
+	--black-50: rgba(25,25,25,.3);
+	--body-font: "Saans-Regular";
+	--body-font-bold: "Saans-SemiBold";
+	--headline-font: "Reckless-Regular";
+	--subhead-font: "Saans-SemiBold";
+	--h1-desktop-font-size: 100px;
+	--h2-desktop-font-size: 70px;
+	--h3-desktop-font-size: 36px;
+	--h4-desktop-font-size: 24px;
+	--h5-desktop-font-size: 18px;
+}
+
+/*-------------------------------- FONTS --------------------------------*/
+
+	@font-face {
+		font-family: Saans-Regular;
+		src: url(assets/fonts/saans/Saans-Regular.woff2);
+	}
+
+	@font-face {
+		font-family: Saans-Regular-Italic;
+		src: url(assets/fonts/saans/Saans-RegularItalic.woff2);
+	}
+
+	@font-face {
+		font-family: Saans-SemiBold;
+		src: url(assets/fonts/saans/Saans-SemiBold.woff2);
+	}
+
+	@font-face {
+		font-family: Saans-SemiBold-Italic;
+		src: url(assets/fonts/saans/Saans-SemiBoldItalic.woff2);
+	}
+
+	@font-face {
+		font-family: Saans-Light;
+		src: url(assets/fonts/saans/Saans-Light.woff2);
+	}
+
+	@font-face {
+		font-family: Saans-Light-Italic;
+		src: url(assets/fonts/saans/Saans-LightItalic.woff2);
+	}
+
+	@font-face {
+		font-family: Reckless-Regular;
+		src: url(assets/fonts/reckless/Reckless-Regular.woff2);
+	}
+
+}
+
+/*-------------------------------- FULL HTML --------------------------------*/
+
+	* {
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		cursor: none !important;
+	}
+
+	::selection {
+		/*color: rgba(255,24,119,1);*/
+		color: rgb(0,215,229);
+		text-shadow: 5px 2px rgb(255,0,0);
+		/*background-color: blue;*/
+	}
+
+	body {
+		background: var(--neutral);
+		font-family: var(--body-font);
+		cursor: none;
+	}
+
+	.cursor-default	{
 		position: fixed;
 		width: 25px;
 		height: 25px;
+		scale: 25%;
 		border-radius: 50%;
-		background-color: red;
-		background-size: cover;
+		background-color: var(--brand-color-01);
+	/*	background-size: cover;*/
 		pointer-events: none;
 		mix-blend-mode: difference;
 		z-index: 999;
 		transition: transform 0.2s;
+		/*border: 1px solid black;
+		padding: 25px;
+		background-clip: padding-box;*/
 	}
+	/*.cursor-learn-more {
+		padding: 10px;
+		border-radius: 100%;
+		background: red;
+		transition: 0.5s;
+	}*/
+	.cursor-learn-more::after {
+		content: 'Learn More';
+		padding: 10px;
+		border-radius: 25%;
+		background-color: red;
+		transition: 0.5s ease-in-out;
+		scale: 100% !important;
+		font-size: 50px;
+	}
+	.inner-cursor {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: green;
+		transform: translate(-50%,-50%);
+	}
+
+/*-------------------------------- HEADINGS --------------------------------*/
+
+	h1 {
+		font-family: var(--headline-font);
+		font-weight: 300;
+		font-size: var(--h1-desktop-font-size);
+		line-height: 110%;
+		cursor: none;
+		margin: 0;
+	}
+
+	h2 {
+		font-family: var(--headline-font);
+		font-weight: 300;
+		font-size: var(--h2-desktop-font-size);
+		line-height: 110%;
+		cursor: none;
+		margin: 0;
+	}
+
+	h3 {
+		font-family: var(--subhead-font);
+		font-weight: 300;
+		font-size: var(--h3-desktop-font-size);
+		line-height: 110%;
+		cursor: none;
+		margin: 0;
+	}
+
+	h4 {
+		font-family: var(--subhead-font);
+		font-weight: 300;
+		font-size: var(--h4-desktop-font-size);
+		line-height: 110%;
+		cursor: none;
+		margin: 0;
+	}
+
+	h5 {
+		font-family: var(--subhead-font);
+		font-weight: normal;
+		font-size: var(--h5-desktop-font-size);
+		line-height: 110%;
+		cursor: none;
+		margin: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+/*-------------------------------- HOME PAGE --------------------------------*/
+	.featured-project-container {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 20px;
+	}
+
+	.featured-project-tile {
+/*		width: 100%;*/
+		height: auto;
+		padding: 40px;
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 20px;
+	}
+
+	.project-heading {
+		display: flex;
+		flex-flow: row nowrap;
+		font-family: var(--body-font-bold);
+		color: var(--black-50);
+		border-bottom: 1px solid var(--black-50);
+	}
+
+	.project-label {
+		display: flex;
+		flex-flow: row nowrap;
+		flex-grow: 1;
+		text-transform: uppercase;
+		gap: 20px;
+/*		justify-content: space-between;*/
+	}
+
+	.project-categories {
+		display: flex;
+		flex-grow: 3;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-content: space-between;
+		gap: 20px;
+/*		justify-content: space-between;*/
+	}
+
+	@media (max-width: 450px) {
+		.secondary-category {
+			display: none !important;
+		}
+	}
+
+	.project-categories p, .project-label p {
+		display: inline-block;
+	}
+	.featured-project-image {
+		height: 600px;
+		background-color: var(--black-50);
+		border-radius: 15px;
+	}
+
