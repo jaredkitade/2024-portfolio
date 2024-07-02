@@ -21,32 +21,32 @@ $(document).ready(function () {
             });
         });
 
-    // $(".link")
-    //     .mouseenter(function() {
-    //         cursor.css({
-    //             transform: "scale(3.2)"
-    //         });
-    //     })
-    //     .mouseleave(function() {
-    //         cursor.css({
-    //             transform: "scale(1)"
-    //         });
-    //     });
-
-    $(".featured-project-tile")
+    $(".link")
         .mouseenter(function() {
-            cursor.addClass('cursor-learn-more');
-            // cursor.removeClass('cursor-default');
+            cursor.css({
+                transform: "scale(4)"
+            });
         })
         .mouseleave(function() {
-            cursor.removeClass('cursor-learn-more');
-            // cursor.addClass('cursor-default');
-        });    
+            cursor.css({
+                transform: "scale(1)"
+            });
+        });
+
+    // $(".featured-project-tile")
+    //     .mouseenter(function() {
+    //         cursor.addClass('cursor-learn-more');
+    //         // cursor.removeClass('cursor-default');
+    //     })
+    //     .mouseleave(function() {
+    //         cursor.removeClass('cursor-learn-more');
+    //         // cursor.addClass('cursor-default');
+    //     });    
 
     $(window)
         .mousedown(function() {
             cursor.css({
-                transform: "scale(4)"
+                transform: "scale(6)"
             });
         })
         .mouseup(function() {
