@@ -231,12 +231,9 @@
     	background-image: radial-gradient(circle at 7% 81%, hsla(172, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 5% 1%, hsla(238, 76%, 61%, 1) 7%, transparent 84%), radial-gradient(circle at 39% 52%, hsla(137, 93%, 64%, 1) 6%, transparent 68%), radial-gradient(circle at 11% 29%, hsla(201, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 90% 50%, hsla(106, 94%, 89%, 1) 2%, transparent 85%);
     	background-blend-mode: normal, normal, normal, normal, normal;
 		pointer-events: none;
-		mix-blend-mode: difference;
+		mix-blend-mode: exclusion;
 		z-index: 999;
 		transition: transform 0.2s;
-		/*border: 1px solid black;
-		padding: 25px;
-		background-clip: padding-box;*/
 	}
 	.cursor-learn-more {
 		padding: 10px;
@@ -350,20 +347,20 @@
 
 	.work, .about {
 		opacity: 1;
-		transition: .25s;
+/*		transition: .25s;*/
 	}
 
 	.menu {
-		transition: .25s;
+/*		transition: .25s;*/
 		overflow: hidden;
 	}
 
 	.home::before {
-		content: "Jared Kitade";
+		content: "JK";
 	}
 
 	.home::after {
-		content: "Jared Kitade";
+		content: "JK";
 	}
 
 	.work::before {
