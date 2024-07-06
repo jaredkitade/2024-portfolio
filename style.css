@@ -344,9 +344,38 @@
 		max-height: 25px;
 	}
 
+	.name {
+		display: inline-flex;
+		font-family: var(--body-font-bold);
+		width: 116px;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.hidden-name {
+		overflow: hidden;
+		max-width: 0;
+		opacity: 0;
+		transition: 1s;
+	}
+
+	.name:hover .hidden-name {
+		max-width: 100%;
+		opacity: 1;
+		transition: 1s;
+	}
+
 	.home {
 		font-family: var(--body-font-bold);
 	}
+
+	/*.home, .work, .about, .menu {
+		width: 116px;
+	}
+
+	.menu {
+		right: 0;
+	}*/
 
 	.work, .about {
 		opacity: 1;
@@ -766,11 +795,8 @@
 
 	.previous-arrow, .next-arrow {
 		position: relative;
-		/*width: 38.5px;
-		height: 38.5px;
-		padding: 6px 0px;*/
-/*		padding: 7.5px 11.5px;*/
 		box-sizing: border-box;
+		bottom: 1px;
 	}
 
 /*-------------------------------- GRADIENT ANIMATION --------------------------------*/
