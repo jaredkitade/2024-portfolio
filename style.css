@@ -350,11 +350,11 @@
 
 	.work, .about {
 		opacity: 1;
-		transition: .5s;
+		transition: .25s;
 	}
 
 	.menu {
-		transition: .5s;
+		transition: .25s;
 		overflow: hidden;
 	}
 
