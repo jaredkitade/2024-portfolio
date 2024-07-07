@@ -110,6 +110,10 @@
     	display: none;
 	}
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
 		background: var(--neutral);
 /*		background-color: blue;*/
@@ -350,32 +354,25 @@
 		width: 116px;
 		position: absolute;
 		z-index: 100;
+		transition: .25s;
 	}
 
 	.hidden-name {
 		overflow: hidden;
 		max-width: 0;
 		opacity: 0;
-		transition: 1s;
+		transition: .75s;
 	}
 
 	.name:hover .hidden-name {
 		max-width: 100%;
 		opacity: 1;
-		transition: 1s;
+		transition: .75s;
 	}
 
 	.home {
 		font-family: var(--body-font-bold);
 	}
-
-	/*.home, .work, .about, .menu {
-		width: 116px;
-	}
-
-	.menu {
-		right: 0;
-	}*/
 
 	.work, .about {
 		opacity: 1;
@@ -705,7 +702,6 @@
 		padding: 25px;
 		justify-content: space-between;
 		align-items: center;
-/*		font-family: var(--body-font-bold);*/
 	}
 
 	.previous-container, .next-container, .arrow-container {

@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
-		// $(".nav").toggleClass("gradient-background-warm");
 		$(".nav-container").toggleClass("nav-container-open");
 		$(".menu").toggleClass("close-menu");
 		$(".work").toggleClass("nav-item-off");
