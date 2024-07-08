@@ -1136,7 +1136,7 @@
 		}
 
 		.nav-container-open {
-			max-height: calc(100vh - 30px) !important;
+			max-height: calc(100% - 30px) !important;
 			transition: .5s;
 			height: 100%;
 		}
@@ -1144,6 +1144,10 @@
 		/*.nav-open {
 
 		}*/
+
+		.work, .about {
+			display: none;
+		}
 
 		.nav-item {
 /*			align-self: flex-end;*/
