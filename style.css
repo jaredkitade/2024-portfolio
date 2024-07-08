@@ -285,7 +285,7 @@
 		bottom: 0;
 	}
 
-	.nav {
+	.nav, .mobile-nav {
 		display: flex;
 		position: absolute;
 		left: 50%;
@@ -1129,7 +1129,7 @@
 			display: block;
 		}
 
-		.nav {
+		.nav, .mobile-nav {
 			width: calc(100vw - 30px);
 /*			align-self: flex-end;*/
 /*			margin-top: 15px;*/

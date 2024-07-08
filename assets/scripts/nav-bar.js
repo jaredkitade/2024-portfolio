@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
+		$(".mobile-nav").toggleClass("nav-open");
 		$(".nav-container").toggleClass("nav-container-open");
 		$(".mobile-nav-container").toggleClass("nav-container-open");
 		$(".nav-item").toggleClass("nav-item-open");
@@ -25,4 +26,17 @@ $(document).ready(function () {
         }
 
     });
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        var offset = $('.home-page-hero').offset().top;
+        var height = $('.home-page-hero').height();
+        if(scroll > 50){
+            $('.mobile-nav').removeClass('negative');
+        } else {
+        	$('.mobile-nav').addClass('negative');
+        }
+
+    });
+
 });
