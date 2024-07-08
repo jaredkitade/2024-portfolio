@@ -21,17 +21,17 @@ $(document).ready(function () {
         var height = $('.home-page-hero').height();
         if(scroll > offset + height - 75){
             $('.nav').removeClass('negative');
+            $('body').removeClass('home-page-load-bg');
         } else {
         	$('.nav').addClass('negative');
+        	$('body').addClass('home-page-load-bg');
         }
 
     });
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        var offset = $('.home-page-hero').offset().top;
-        var height = $('.home-page-hero').height();
-        if(scroll > 50){
+        if(scroll > 50) {
             $('.mobile-nav').removeClass('negative');
         } else {
         	$('.mobile-nav').addClass('negative');
