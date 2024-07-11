@@ -112,7 +112,8 @@
 
 	a {
 		text-decoration: none;
-		color: var(--black);
+/*		color: var(--black);*/
+		color: inherit;
 		cursor: none !important;
 	}
 
@@ -536,13 +537,14 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 550px;
+/*		height: 450px;*/
 		z-index: -2;
 		display: flex;
 		flex-flow: column nowrap;
 		padding: 25px;
 		gap: 300px;
 		color: var(--neutral);
+		padding-top: 300px !important;
 	}
 
 	.footer-row {
@@ -665,7 +667,7 @@
 	.home-page-container, .page-container {
 		margin: 0 auto;
 		background-color: var(--neutral);
-		margin-bottom: 550px;
+		margin-bottom: 450px;
 	}
 
 	.page-container, .featured-project-container {
@@ -1266,7 +1268,7 @@
 		/*-------------------------------- ROOT - MOBILE */
 		
 			:root {
-				--body-small: 1.2rem;
+				--body-small: 1.3rem;
 				--body-regular: 1.6rem;
 				--body-large: 2.0rem;
 				--body-intro: 2.4rem;
@@ -1311,15 +1313,58 @@
 				display: none;
 			}
 
+		/*-------------------------------- FOOTER - MOBILE */
+
+			.footer-container {
+				gap: 150px;
+				padding: 15px 15px 90px 15px;
+			}
+
+			.footer-link-container {
+/*				flex-flow: column nowrap;*/
+			}
+
+			.footer-container > .footer-row:nth-child(1) {
+				gap: 20px;
+			}
+
+			.footer-container > .footer-row:nth-child(2) {
+				gap: 10px;
+			}
+
+			.footer-container > .footer-row:nth-child(2) > .footer-pill-container:nth-child(2) {
+				align-content: stretch !important;
+				flex-wrap: wrap;
+			}
+
+			.footer-container > .footer-row:nth-child(2) > .footer-pill-container:nth-child(2) > .pill-container {
+				align-content: stretch;
+			}
+
+			.footer-row {
+				flex-flow: column;
+				gap: 25px;
+				align-items: flex-start;
+			}
+
+			.footer-email {
+				font-size: 4.0rem;
+			}
+
+			.pill {
+				font-size: var(--body-small);
+				border-width: .5px;
+			}
 
 		/*-------------------------------- HOME PAGE - MOBILE */
 		
 			.page-container, .home-page-container {
-				margin-top: 0 !important;
+				padding-top: 0 !important;
 			}
 
 			.page-container > div {
 				padding: 15px;
+				gap: 40px;
 			}
 
 			.home-page-container > div {
@@ -1465,6 +1510,10 @@
 		.home-page-container div {
 			gap: 50px;
 		}
+		
+		.home-page-container, .page-container {
+			margin-bottom: 550px;
+		}
 
 		.secondary-project-tile:nth-child(1) {
 			padding-right: 75px;
@@ -1501,6 +1550,7 @@
 
 		.footer-container {
 			padding: 75px;
+/*			height: 550px;*/
 		}
 
 		.nav-item:hover.work::after, .nav-item:hover.about::after, .nav-item:hover.menu::after, .nav-item:hover.home::before, .nav-item:hover.work::before, .nav-item:hover.about::before, .nav-item:hover.menu::before, .footer-home:hover.footer-home::before, .footer-home:hover.footer-home::after, .footer-work:hover.footer-work::before, .footer-work:hover.footer-work::after, .footer-about:hover.footer-about::before, .footer-about:hover.footer-about::after, .footer-contact:hover.footer-contact::before, .footer-contact:hover.footer-contact::after {
