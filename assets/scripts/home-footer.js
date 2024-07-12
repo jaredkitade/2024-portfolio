@@ -15,9 +15,9 @@ $(document).ready(function () {
 	        }
 
 	        if(scroll > offset + height){
-	            $("body").removeClass("home-page-load-bg");
+	            $("body").removeClass("body-black");
 	        } else {
-	        	$("body").addClass("home-page-load-bg");
+	        	$("body").addClass("body-black");
 	        }
 	        
 	        if(scroll > 40) {
@@ -32,10 +32,10 @@ $(document).ready(function () {
 	        	$(".mobile-nav").removeClass("filled");
 	        }
 
-	        if(scroll > pageOffset + pageHeight){
-	            $(".footer-container").addClass("off");
+	        if(scroll > pageOffset + pageHeight - 950){
+	            $(".footer-container").removeClass("off");
 	        } else {
-	        	$(".footer-container").removeClass("off");
+	        	$(".footer-container").addClass("off");
 	        }
 
 	    });

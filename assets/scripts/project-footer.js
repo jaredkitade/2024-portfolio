@@ -11,7 +11,7 @@ $(document).ready(function () {
 	        	$(".mobile-nav").removeClass("filled");
 	        }
 
-	        if(scroll > pageOffset + pageHeight - 950){
+	        if(scroll < pageOffset + pageHeight){
 	            $(".footer-container").removeClass("off");
 	        } else {
 	        	$(".footer-container").addClass("off");

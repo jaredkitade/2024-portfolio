@@ -483,7 +483,7 @@
 		overflow: hidden;
 	}
 
-	.body-menu-open {
+	.body-black, .body-menu {
 		background-color: var(--black) !important;
 		transition: .5s;
 	}
@@ -549,7 +549,7 @@
 		padding: 25px;
 		gap: 300px;
 		color: var(--neutral);
-		padding-top: 100% !important;
+/*		padding-top: 100% !important;*/
 		transition: .5s;
 	}
 
@@ -689,10 +689,6 @@
 
 	.page-container > div {
 		padding: 25px;
-	}
-
-	.home-page-load-bg {
-		background-color: var(--black) !important;
 	}
 
 	.home-page-hero {
