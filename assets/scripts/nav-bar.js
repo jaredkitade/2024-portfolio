@@ -10,7 +10,7 @@ $(document).ready(function () {
 		$(".work").toggleClass("nav-item-off");
 		$(".about").toggleClass("nav-item-off");
 		$("body").toggleClass("no-scroll");
-		$("body").toggleClass("");
+		$("body").toggleClass("body-menu-open");
 		$(".page-container").toggleClass("off");
 		$(".footer-container").toggleClass("black-text");
 	});
