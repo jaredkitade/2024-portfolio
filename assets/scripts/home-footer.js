@@ -32,11 +32,11 @@ $(document).ready(function () {
 	        	$(".mobile-nav").removeClass("filled");
 	        }
 
-	        if(scroll > pageOffset + pageHeight - 950){
-	            $(".footer-container").removeClass("off");
-	        } else {
-	        	$(".footer-container").addClass("off");
-	        }
+	        // if(scroll > pageOffset + pageHeight - 950){ // works on mobile but footer disappears on destkop. need to figure out JS media query here
+	        //     $(".footer-container").removeClass("off");
+	        // } else {
+	        // 	$(".footer-container").addClass("off");
+	        // }
 
 	    });
 	});

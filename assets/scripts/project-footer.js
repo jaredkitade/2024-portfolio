@@ -11,11 +11,11 @@ $(document).ready(function () {
 	        	$(".mobile-nav").removeClass("filled");
 	        }
 
-	        if(scroll < pageOffset + pageHeight){
-	            $(".footer-container").removeClass("off");
-	        } else {
-	        	$(".footer-container").addClass("off");
-	        }
+	        // if(scroll < pageOffset + pageHeight){
+	        //     $(".footer-container").removeClass("off");
+	        // } else {
+	        // 	$(".footer-container").addClass("off");
+	        // }
 
 	    });
 });
