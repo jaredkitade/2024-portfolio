@@ -484,7 +484,7 @@
 	}
 
 	.body-menu-open {
-		background-color: var(--black);
+		background-color: var(--black) !important;
 		transition: .5s;
 	}
 
@@ -493,6 +493,11 @@
 		background-color: var(--black);
 		color: var(--black);
 		transition: .5s;
+	}
+
+	.blackout {
+		color: var(--black) !important;
+		border-color: var(--black) !important;
 	}
 
 	.negative {
