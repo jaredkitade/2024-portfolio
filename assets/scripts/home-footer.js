@@ -26,7 +26,7 @@ $(document).ready(function () {
 	        	$(".mobile-nav").addClass("negative");
 	        }
 
-	        if(scroll > pageOffset + pageHeight - 850){
+	        if(scroll > pageOffset + pageHeight - 900){
 	            $(".mobile-nav").addClass("filled");
 	        } else {
 	        	$(".mobile-nav").removeClass("filled");
