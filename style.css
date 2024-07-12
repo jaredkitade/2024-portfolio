@@ -489,7 +489,6 @@
 	}
 
 	.off {
-/*		display: none !important;*/
 		opacity: 0 !important;
 		background-color: var(--black);
 		color: var(--black);
