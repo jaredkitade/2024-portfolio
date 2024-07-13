@@ -13,6 +13,7 @@ $(document).ready(function () {
 		$("body").toggleClass("body-menu");
 		$(".page-container").toggleClass("blackout");
 		$(".footer-container").toggleClass("blackout");
+		$(".svg-hero").toggleClass("blackout");
 	});
 
 });

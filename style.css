@@ -322,14 +322,16 @@
 	/*-------------------------------- SPIN ANIMATION */
 
 		.spin-animation {
-			animation: spin 2s ease-in-out infinite normal;
+			animation: spin 3s ease-in-out infinite normal;
 		}
 
 		@keyframes spin {
 			0% { transform: rotate3d(0, 0, 1, 0deg); }
 /*			50% { transform: rotate3d(0, 0, 0, 0deg); }*/
-			75% { transform: rotate3d(0, 0, 1, 360deg); }
-			100% { transform: rotate3d(0, 0, 1, 360deg); }
+			60% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
+			70% { transform: rotate3d(0, 0, 1, 360deg) scale(1.1); }
+			80% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
+			100% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
 		}
 
 /*-------------------------------- CURSOR --------------------------------*/
@@ -710,6 +712,7 @@
 		justify-content: center;
 		gap: 3vh !important;
 		position: relative;
+		overflow: hidden;
 	}
 
 	.home-page-hero-name {
@@ -1439,6 +1442,10 @@
 
 			.home-page-hero {
 				gap: 2vh !important;
+			}
+
+			.hero-svg > svg {
+				transform: scale(0.5);
 			}
 
 			.secondary-project-container {
