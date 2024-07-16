@@ -8,7 +8,7 @@ $(document).ready(function () {
 	        var pageOffset = $(".page-container").offset().top;
 	        var pageHeight = $(".page-container").height();
 	        
-	        if(scroll > offset + height - 25){
+	        if(scroll > offset + height + 75){
 	            $(".nav").removeClass("negative");
 	        } else {
 	        	$(".nav").addClass("negative");
