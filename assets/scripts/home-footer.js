@@ -14,11 +14,11 @@ $(document).ready(function () {
 	        	$(".nav").addClass("negative");
 	        }
 
-	        if(scroll > offset + height){
-	            $("body").removeClass("body-black");
-	        } else {
-	        	$("body").addClass("body-black");
-	        }
+	        // if(scroll > offset + height){
+	        //     $("body").removeClass("body-black");
+	        // } else {
+	        // 	$("body").addClass("body-black");
+	        // }
 	        
 	        if(scroll > 40) {
 	            $(".mobile-nav").removeClass("negative");
@@ -55,6 +55,12 @@ $(document).ready(function () {
 				$('.home-page-hero').addClass('off');
 			} else{
 				$('.home-page-hero').removeClass('off');
+			}
+
+			if($(this).scrollTop() > hHeight + 100){
+				$("body").removeClass("body-black");
+	        } else {
+	        	$("body").addClass("body-black");
 			}
 
 		}).scroll();
