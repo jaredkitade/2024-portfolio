@@ -1654,7 +1654,7 @@
 			.mobile-nav-project-column {
 				display: flex;
 				flex-flow: column nowrap;
-				gap: 3vh;
+				gap: 5vh;
 				max-height: 0;
 				height: 100%:;
 				margin-top: -8vh;
@@ -1664,8 +1664,8 @@
 			}
 
 			.mnpc-open {
-				max-height: 100% !important;
-				margin-top: -4vh;
+				max-height: 250% !important;
+				margin-top: -2vh;
 				transition: .5s;
 				-webkit-transition: .5s;
 				-moz-transition: .5s;
