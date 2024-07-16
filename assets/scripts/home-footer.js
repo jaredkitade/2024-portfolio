@@ -39,6 +39,25 @@ $(document).ready(function () {
 	        // }
 
 	    });
+
+	    $(window).on('scroll', function(){
+
+			// var contentTop = $('.page-container').offset().top;
+			var hHeight = $('.home-page-hero').height();
+
+			if($(this).scrollTop() > hHeight + 45){
+				$('.nav').removeClass('negative');
+			} else{
+				$('.nav').addClass('negative');
+			}
+
+			if($(this).scrollTop() > hHeight + 450){
+				$('.home-page-hero').addClass('off');
+			} else{
+				$('.home-page-hero').removeClass('off');
+			}
+
+		}).scroll();
 	});
 
 });

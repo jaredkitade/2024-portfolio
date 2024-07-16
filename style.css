@@ -292,6 +292,36 @@
 			100% { transform: rotate3d(0, 1, 0, 0deg); color: var(--neutral);}
 		}*/
 
+		.flip-load {
+			animation: flip-load 2s ease-in-out 1 normal;
+			transform: rotate3d(1, 0, 0, 90deg);
+			animation-fill-mode: forwards;
+		}
+
+		.flip-load:nth-child(1) { animation-delay: .25s; }
+		.flip-load:nth-child(2) { animation-delay: .5s; }
+		.flip-load:nth-child(3) { animation-delay: .75s; }
+		.flip-load:nth-child(4) { animation-delay: 1s; }
+		.flip-load:nth-child(5) { animation-delay: 1.25s; }
+		.flip-load:nth-child(6) { animation-delay: 1.5s; }
+		.flip-load:nth-child(7) { animation-delay: 1.75s; }
+		.flip-load:nth-child(8) { animation-delay: 2s; }
+		.flip-load:nth-child(9) { animation-delay: 2.25s; }
+		.flip-load:nth-child(10) { animation-delay: 2.5s; }
+
+		@keyframes flip-load {
+			0% { transform: rotate3d(1, 0, 0, 90deg); }
+			100% { transform: rotate3d(1, 0, 0, 360deg); }
+		}
+
+
+		@keyframes flip {
+			0% { transform: rotate3d(0, 1, 0, 0deg); }
+			15% { transform: rotate3d(0, 1, 1, 360deg); }
+			85% { transform: rotate3d(0, 1, 1, 360deg); }
+			100% { transform: rotate3d(0, 1, 0, 0deg); }
+		}
+
 		@keyframes flip {
 			0% { transform: rotate3d(0, 1, 0, 0deg); }
 			15% { transform: rotate3d(0, 1, 1, 360deg); }
@@ -537,12 +567,9 @@
 		transition: .5s;
 	}
 
-	/*.off {
-		opacity: 0 !important;
-		background-color: var(--black);
-		color: var(--black);
-		transition: .5s;
-	}*/
+	.off {
+		display: none !important;
+	}
 
 	.blackout {
 		color: var(--black) !important;
@@ -607,8 +634,6 @@
 	}
 
 	.nav-row {
-		/*justify-content: space-between;
-		height: 0;*/
 		transition: .5s .75s;
 		-webkit-transition: .5s .75s;
 		-moz-transition: .5s .75s;
@@ -639,9 +664,10 @@
 		gap: 50px;
 		color: var(--neutral-30);
 		overflow: hidden;
-		/*transition: .5s;
-		-webkit-transition: .5s;
-		-moz-transition: .5s;*/
+	}
+
+	.nav-int-row, .nav-lp-link, .nav-number {
+		margin-right: auto;
 	}
 
 	.nav-active > .work-menu::before, .nav-active > .nav-two::before, .nav-active > .work-menu::after, .nav-active > .nav-two::after {
@@ -692,6 +718,7 @@
 		overflow: hidden;
 		position: relative;
 		pointer-events: none;
+		margin-right: auto;
 	}
 
 	.nav-page-link::before, .nav-page-link::after {
@@ -714,6 +741,22 @@
 		-webkit-transition: .5s;
 		-moz-transition: .5s;
 	}
+
+	.nav-page-link:nth-child(2) { transition-delay: .25s; }
+	.nav-page-link:nth-child(3) { transition-delay: .5s; }
+	.nav-page-link:nth-child(4) { transition-delay: .75s; }
+	.nav-page-link:nth-child(5) { transition-delay: 1s; }
+	.nav-page-link:nth-child(6) { transition-delay: 1.25s; }
+	.nav-page-link:nth-child(7) { transition-delay: 1.5s; }
+	.nav-page-link:nth-child(8) { transition-delay: 1.75s; }
+	.nav-page-link:nth-child(9) { transition-delay: 2s; }
+	.nav-page-link:nth-child(10) { transition-delay: 2.25s; }
+	.nav-page-link:nth-child(11) { transition-delay: 2.5s; }
+	.nav-page-link:nth-child(12) { transition-delay: 2.75s; }
+	.nav-page-link:nth-child(13) { transition-delay: 3s; }
+	.nav-page-link:nth-child(14) { transition-delay: 3.25s; }
+	.nav-page-link:nth-child(15) { transition-delay: 3.5s; }
+	.nav-page-link:nth-child(16) { transition-delay: 3.75s; }
 
 	.nav-page-link-open::after, .nav-main-link-open::after {
 		opacity: 1;
@@ -899,6 +942,10 @@
 	    max-height: 23px;
 	}
 
+	.footer-link::before, .footer-link::after {
+		max-height: 23px;
+	}
+
 	.footer-home::before, .footer-home::after {
 		content: "Home";
 	}
@@ -966,13 +1013,15 @@
 	}
 
 	.home-page {
-		padding-top: 0 !important;
+/*		padding-top: 0 !important;*/
+		margin-top: 100vh;
+		border-radius: 25px;
 	}
 
-	.home-page > div:nth-child(2) {
+	/*.home-page > div:nth-child(1) {
 		border-radius: 50px 50px 0 0;
 		padding-top: 0;
-	}
+	}*/
 
 	.page-container > div {
 		padding: 25px;
@@ -988,8 +1037,12 @@
 		align-items: center;
 		gap: 3vh !important;
 		padding-top: 100px !important;
-		position: relative;
+/*		position: relative;*/
 		overflow: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 
 	.home-page-hero-name {
@@ -1695,7 +1748,7 @@
 		/*-------------------------------- FOOTER - MOBILE */
 
 			.footer-container {
-				gap: 150px;
+				gap: 220px;
 				padding: 90px 15px;
 			}
 
@@ -1810,7 +1863,7 @@
 
 			.page-container {
 				gap: 25px;
-				border-radius: 0 0 25px 25px;
+				border-radius: 25px;
 			}
 
 			.project-hero-block {
@@ -1918,7 +1971,6 @@
 		
 		.page-container {
 			margin-bottom: 550px;
-			border-radius: 0 0 50px 50px;
 		}
 
 		.secondary-project-tile:nth-child(1) {
@@ -1927,6 +1979,12 @@
 
 		.secondary-project-tile:nth-child(2) {
 			padding-left: 75px;
+		}
+
+		.home-page {
+			border-radius: 50px;
+			padding-top: 50px !important;
+
 		}
 
 		.home-page > div:nth-child(2) {
