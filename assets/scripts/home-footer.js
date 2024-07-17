@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-	$(function(){
 		$(window).scroll(function() {
 	        var scroll = $(window).scrollTop();
 	        var offset = $(".home-page-hero").offset().top;
@@ -51,10 +50,12 @@ $(document).ready(function () {
 				$('.nav').addClass('negative');
 			}
 
-			if($(this).scrollTop() > hHeight + 450){
+			if($(this).scrollTop() > hHeight + 150){
 				$('.home-page-hero').addClass('off');
+				$('.footer-container').removeClass('off');
 			} else{
 				$('.home-page-hero').removeClass('off');
+				$('.footer-container').addClass('off');
 			}
 
 			if($(this).scrollTop() > hHeight + 100){
@@ -64,7 +65,6 @@ $(document).ready(function () {
 			}
 
 		}).scroll();
-	});
 
 });
 

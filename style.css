@@ -6,7 +6,7 @@
 		--neutral: rgba(255,250,240,1);
 		--neutral-50: rgba(255,250,240,.5);
 		--neutral-30: rgba(255,250,240,.3);
-		--black: #191919;
+		--black: rgba(25,25,25,1);
 		--black-30: rgba(25,25,25,.3);
 		--black-50: rgba(25,25,25,.5);
 		--black-75: rgba(25,25,25,.75);
@@ -26,7 +26,7 @@
 		--body-intro: 3.0rem;
 		--h1-font-size: 10rem;
 		--h2-font-size: 7.0rem;
-		--h3-font-size: 3.6rem;
+		--h3-font-size: 4.5rem;
 		--h4-font-size: 3.0rem;
 		--h5-font-size: 2.4rem;
 		--h6-font-size: 2.0rem;
@@ -104,7 +104,6 @@
 		font-family: var(--body-font);
 		font-size: var(--body-regular);
 		color: var(--black);
-		cursor: none;
 		margin: 0;
 		transition: .5s;
 		-ms-overflow-style: none !important;
@@ -162,7 +161,6 @@
 		font-weight: 300;
 		font-size: var(--h1-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -171,7 +169,6 @@
 		font-weight: 300;
 		font-size: var(--h2-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -180,7 +177,6 @@
 		font-weight: 300;
 		font-size: var(--h3-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -189,7 +185,6 @@
 		font-weight: 300;
 		font-size: var(--h4-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -198,7 +193,6 @@
 		font-weight: normal;
 		font-size: var(--h5-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -207,7 +201,6 @@
 		font-weight: normal;
 		font-size: var(--h6-font-size);
 		line-height: 110%;
-		cursor: none;
 		margin: 0;
 	}
 
@@ -243,14 +236,14 @@
 		}
 
 		.page-nav-link:hover .previous::after, .page-nav-link:hover .next::after, .page-nav-link:hover .previous-arrow::after, .page-nav-link:hover .next-arrow::after, .page-nav-link:hover .previous::before, .page-nav-link:hover .next::before, .page-nav-link:hover .previous-arrow::before, .page-nav-link:hover .next-arrow::before {
-			transform: translate(0, 100%);
+			transform: translate(0, 105%);
 			transition: .5s;
 			-webkit-transition: .5s;
 			-moz-transition: .5s;
 		}
 
 		.text-link:hover.text-link::before, .text-link:hover.text-link::after, .nav-int-row:hover > .nav-number::before, .nav-int-row:hover > .nav-number::after, .nav-int-row:hover > .nav-lp-link::before, .nav-int-row:hover > .nav-lp-link::after {
-			transform: translate(0, 100%) !important;
+			transform: translate(0, 105%) !important;
 			transition: .5s;
 			-webkit-transition: .5s;
 			-moz-transition: .5s;
@@ -336,6 +329,22 @@
 			100% { transform: rotate3d(0, 1, 0, 0deg); color: var(--neutral);}
 		}
 
+		@keyframes flip-negative {
+			0% { transform: rotate3d(1, 0, 0, 0deg); color: var(--neutral); background: var(--black); }
+			25% { transform: rotate3d(1, 0, 0, 0deg); color: var(--neutral); background: var(--black); }
+			50% { transform: rotate3d(1, 0, 0, 360deg); color: var(--black); background: var(--neutral); }
+			75% { transform: rotate3d(1, 0, 0, 360deg); color: var(--black); background: var(--neutral); }
+			100% { transform: rotate3d(1, 0, 0, 720deg); color: var(--neutral); background: var(--black);}
+		}
+
+		@keyframes flip-negative-02 {
+			0% { transform: rotate3d(1, 0, 0, 0deg); color: var(--black); background: var(--neutral); }
+			25% { transform: rotate3d(1, 0, 0, 0deg); color: var(--black); background: var(--neutral); }
+			50% { transform: rotate3d(1, 0, 0, 360deg); color: var(--neutral); background: var(--black); border: 1px solid var(--neutral); }
+			75% { transform: rotate3d(1, 0, 0, 360deg); color: var(--neutral); background: var(--black); border: 1px solid var(--neutral); }
+			100% { transform: rotate3d(1, 0, 0, 720deg); color: var(--black); background: var(--neutral);}
+		}
+
 		.flip-container:hover > .flip {
 			animation: flip 2s ease-in 1;
 		}
@@ -363,11 +372,26 @@
 		}
 
 		@keyframes spin {
-			0% { transform: rotate3d(0, 0, 1, 0deg); }
-			60% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
-			70% { transform: rotate3d(0, 0, 1, 360deg) scale(1.1); }
-			80% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
-			100% { transform: rotate3d(0, 0, 1, 360deg) scale(1.0); }
+			from { transform: rotate3d(0, 0, 1, 0deg) scale(1.0); }
+			90% { transform: rotate3d(0, 0, 1, 720deg) }
+			95% { transform: rotate3d(0, 0, 1, 720deg) }
+			to { transform: rotate3d(0, 0, 1, 720deg) scale(1.0); }
+		}
+
+	/*-------------------------------- BOUNCE ANIMATION */
+
+		@keyframes bounce-lr {
+			/*from, to { transform: scale(1, 1); }
+			25% { transform: scale(0.9, 1.1); }
+			50% { transform: scale(1.1, 0.9); }
+			75% { transform: scale(0.95, 1.05); }*/
+			0%   { transform: scale(1,1)      translateY(0); }
+			10%  { transform: scale(1.1,.9)   translateY(0); }
+			30%  { transform: scale(.9,1.1)   translatex(50px); }
+			50%  { transform: scale(1.05,.95) translateY(0); }
+			57%  { transform: scale(1,1)      translatex(7px); }
+			64%  { transform: scale(1,1)      translateY(0); }
+			100% { transform: scale(1,1)      translateY(0); }
 		}
 
 	/*-------------------------------- NAV LOAD ANIMATIONS */
@@ -387,23 +411,53 @@
 
 	.cursor-default	{
 		position: fixed;
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 		scale: 25%;
-		border-radius: 50%;
-		background-color: hsla(161, 77%, 83%, 1);
-    	background-image: radial-gradient(circle at 7% 81%, hsla(172, 91%, 91%, 1) 16%, transparent 53%), radial-gradient(circle at 5% 1%, hsla(238, 76%, 61%, 1) 7%, transparent 84%), radial-gradient(circle at 39% 52%, hsla(137, 93%, 64%, 1) 6%, transparent 68%), radial-gradient(circle at 11% 29%, hsla(201, 97%, 75%, 1) 8%, transparent 74%), radial-gradient(circle at 90% 50%, hsla(106, 94%, 89%, 1) 2%, transparent 85%);
-    	background-blend-mode: normal, normal, normal, normal, normal;
+		border-radius: 100em;
+		background-color: var(--neutral);
 		pointer-events: none;
 		mix-blend-mode: exclusion;
 		z-index: 999;
 		transition: transform 0.2s;
 	}
+
 	.cursor-learn-more {
-		padding: 10px;
-		border-radius: 100%;
-		background: red;
-		animation: active-cursor 1s linear 1;
+		position: fixed;
+		height: auto;
+		width: auto;
+		max-width: 100%;
+		font-family: var(--body-font-bold);
+		font-size: 3rem;
+		transition: transform 0.2s;
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 7px;
+		align-items: center;
+  		z-index: 999;
+  		pointer-events: none !important;
+  		mix-blend-mode: difference;
+
+  		/*pill cursor*/
+
+		/*background-color: var(--black);
+		background-color: var(--neutral);
+		color: var(--neutral);
+		color: var(--black);
+		padding: 5px 5px 5px 15px;
+		border-radius: 100em;
+		border: 1px solid var(--neutral);*/
+
+
+		/*split cursor*/
+
+  		background-color: transparent !important;
+  		gap: 0px;
+
+  		/*gradient cursor*/
+
+/*  	mix-blend-mode: normal;*/
+
 	}
 
 	@keyframes active-cursor {
@@ -411,24 +465,54 @@
 		100% { transform: scale(5.0,); }
 	}
 
-	/*.cursor-learn-more::after {
+	.cursor-learn-more::before {
 		content: 'Learn More';
-		padding: 10px;
-		width: auto;
-		border-radius: 25%;
-		background-color: red;
-		scale: 100% !important;
-		font-size: 50px;
-	}*/
+		height: 55px;
+		padding: 10px 25px;
+		border-radius: 100em;
+		background-color: var(--neutral);
+		border: 1px solid var(--black);
+		color: var(--black);
+		white-space: nowrap;
+		animation: flip-negative-02 5s cubic-bezier(.80, 0.40, 0.20, 1) .25s infinite;
 
-	.inner-cursor {
+		/*GRADIENT VERSION*/
+		/*background-color: var(--black);
+		color: var(--neutral);*/
+	}
+
+	.cursor-learn-more::after {
+		content: "→";
+		color: var(--black);
+		height: 55px;
+		width: 55px;
+		line-height: 21px;
+		padding: 15px;
+		border: 1px solid var(--neutral);
+		border-radius: 100em;
+		background-color: var(--black);
+		color: var(--neutral);
+		/*display: flex;
+		flex-flow: row nowrap;
+		align-items: center;*/
+		animation: flip-negative 5s cubic-bezier(0.280, 0.840, 0.420, 1) 0.5s infinite;
+
+		/*GRADIENT VERSION*/
+		/*border: none;
+		background-color: hsla(26, 79%, 79%, 1);
+	    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+	    animation: hero-gradient-animation 5s linear infinite alternate, bounce-lr 2s cubic-bezier(0.280, 0.840, 0.420, 1) 1s infinite;
+	    background-blend-mode: normal, normal, normal, normal, normal;*/
+	}
+
+	/*.inner-cursor {
 		position: absolute;
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
 		background-color: green;
 		transform: translate(-50%,-50%);
-	}
+	}*/
 
 /*-------------------------------- NAV BAR --------------------------------*/
 	
@@ -471,6 +555,7 @@
 	.mobile-nav {
 		flex-flow: column-reverse;
 		padding: 15px 20px;
+		border-radius: 25px;
 	}
 
 	.nav-default, .mobile-nav-default {
@@ -586,7 +671,7 @@
 	.negative {
 		border-color: var(--neutral);
 		transition: .5s;
-		background-color: var(--transparent);
+		background-color: transparent;
 	}
 
 	.negative .nav-item {
@@ -612,7 +697,7 @@
 	.mobile-nav-open {
 		background-color: var(--black);
 		border-color: var(--neutral);
-		padding-top: 55px;
+		padding-top: 40px;
 	}
 
 	.nav-item-open {
@@ -671,7 +756,7 @@
 	}
 
 	.nav-active > .work-menu::before, .nav-active > .nav-two::before, .nav-active > .work-menu::after, .nav-active > .nav-two::after {
-		transform: translate(0, 100%) !important;
+		transform: translate(0, 105%) !important;
 		transition: .5s;
 		-webkit-transition: .5s;
 		-moz-transition: .5s;
@@ -693,7 +778,6 @@
 
 	.nav-lp-link {
 		font-family: var(--body-font-bold);
-/*		font-size: 6.0rem;*/
 		font-size: 3.5vw;
 		line-height: 80%;
 		transition: .5s;
@@ -711,7 +795,6 @@
 
 	.nav-page-link {
 		font-family: var(--headline-font);
-/*		font-size: var(--h3-font-size);*/
 		font-size: 2vw;
 		color: var(--neutral);
 		display: flex;
@@ -999,7 +1082,6 @@
 /*-------------------------------- HOME PAGE --------------------------------*/
 
 	.page-container {
-		padding-top: 100px !important;
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 20px;
@@ -1008,12 +1090,14 @@
 		margin: 0 auto;
 		background-color: var(--neutral);
 		margin-bottom: 450px;
-		gap: 50px;
 		border-radius: 0 0 25px 25px;
 	}
 
+	.project-page {
+		padding-top: 100px;
+	}
+
 	.home-page {
-/*		padding-top: 0 !important;*/
 		margin-top: 100vh;
 		border-radius: 25px;
 	}
@@ -1037,7 +1121,6 @@
 		align-items: center;
 		gap: 3vh !important;
 		padding-top: 100px !important;
-/*		position: relative;*/
 		overflow: hidden;
 		position: fixed;
 		top: 0;
@@ -1049,12 +1132,13 @@
 		display: flex;
 		font-family: var(--body-font-bold);
 		text-transform: uppercase;
-		font-size: 18vw;
+		font-size: 16vw;
 		color: var(--neutral);
 		height: auto;
 		line-height: 80%;
-		width: 80%;
+		width: 75%;
 		z-index: 2;
+		mix-blend-mode: exclusion;
 	}
 
 	.hero-svg {
@@ -1364,7 +1448,7 @@
 	    ;
 	    background-color: hsla(26, 79%, 79%, 1);
 	    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
-	    animation: hero-gradient-animation 5s linear infinite alternate;
+	    animation: hero-gradient-animation 1s linear infinite alternate;
 	    background-blend-mode: normal, normal, normal, normal, normal;
 	    content: "";
 	    left: 0;
@@ -1803,7 +1887,7 @@
 		/*-------------------------------- HOME PAGE - MOBILE */
 		
 			.page-container {
-				padding-top: 0 !important;
+				padding-top: 10px !important;
 			}
 
 			.page-container > div {
@@ -1828,6 +1912,12 @@
 			}
 
 			.featured-project-tile, .secondary-project-tile {
+				gap: 15px;
+			}
+
+			.featured-project-tile > a, .secondary-project-tile > a {
+				display: flex;
+				flex-flow: column nowrap;
 				gap: 15px;
 			}
 
@@ -1936,6 +2026,24 @@
 			--h6-font-size: 2.4rem;
 		}
 
+		.cursor-learn-more {
+			font-size: 4rem;
+		}
+
+		.cursor-learn-more::before {
+			height: 75px;
+			padding: 15px 30px;
+		}
+
+		.cursor-learn-more::after {
+			height: 75px;
+			width: 75px;
+			/*line-height: 75px;
+			padding: 22px;*/
+			line-height: 40px;
+			padding: 15px 22px 22px 22px;
+		}
+
 		.nav-container {
 			max-height: 60px;
 		}
@@ -1971,6 +2079,19 @@
 		
 		.page-container {
 			margin-bottom: 550px;
+			gap: 50px;
+		}
+
+		.featured-project-tile {
+			gap: 40px;
+		}
+
+		.secondary-project-tile {
+			gap: 25px;
+		}
+
+		.featured-project-tile > a {
+			gap: 40px;
 		}
 
 		.secondary-project-tile:nth-child(1) {
@@ -1984,7 +2105,6 @@
 		.home-page {
 			border-radius: 50px;
 			padding-top: 50px !important;
-
 		}
 
 		.home-page > div:nth-child(2) {
@@ -2007,6 +2127,10 @@
 			padding-bottom: 50px !important;
 		}
 
+		.secondary-project-container {
+			gap: 50px;
+		}
+
 		.arrow-container {
 			padding: 8px 13px;
 			text-align: center;
@@ -2014,7 +2138,6 @@
 
 		.footer-container {
 			padding: 150px 75px 75px 75px !important;
-/*			height: 550px;*/
 		}
 
 		.nav-item:hover.work::after, .nav-item:hover.about::after, .nav-item:hover.menu::after, .nav-item:hover.home::before, .nav-item:hover.work::before, .nav-item:hover.about::before, .nav-item:hover.menu::before, .footer-home:hover.footer-home::before, .footer-home:hover.footer-home::after, .footer-work:hover.footer-work::before, .footer-work:hover.footer-work::after, .footer-about:hover.footer-about::before, .footer-about:hover.footer-about::after, .footer-contact:hover.footer-contact::before, .footer-contact:hover.footer-contact::after {
