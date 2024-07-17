@@ -420,6 +420,8 @@
 		mix-blend-mode: exclusion;
 		z-index: 999;
 		transition: transform 0.2s;
+		-webkit-transition: transform 0.2s;
+		-moz-transition: transform 0.2s;
 	}
 
 	.cursor-learn-more {
@@ -430,6 +432,8 @@
 		font-family: var(--body-font-bold);
 		font-size: 3rem;
 		transition: transform 0.2s;
+		-webkit-transition: transform 0.2s;
+		-moz-transition: transform 0.2s;
 		display: flex;
 		flex-flow: row nowrap;
 		gap: 7px;
@@ -474,7 +478,7 @@
 		border: 1px solid var(--black);
 		color: var(--black);
 		white-space: nowrap;
-		animation: flip-negative-02 5s cubic-bezier(.80, 0.40, 0.20, 1) .25s infinite;
+		animation: flip-negative-02 5s cubic-bezier(.83,-0.6,.24,1.49) 0s infinite;
 
 		/*GRADIENT VERSION*/
 		/*background-color: var(--black);
@@ -495,7 +499,7 @@
 		/*display: flex;
 		flex-flow: row nowrap;
 		align-items: center;*/
-		animation: flip-negative 5s cubic-bezier(0.280, 0.840, 0.420, 1) 0.5s infinite;
+		animation: flip-negative 5s cubic-bezier(.83,-0.6,.24,1.49) 0.25s infinite;
 
 		/*GRADIENT VERSION*/
 		/*border: none;
