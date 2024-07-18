@@ -23,10 +23,22 @@ $(document).ready(function () {
 
 	});
 
+	$(".home-nav-link").click(function(){
+		$(".home-nav-link").toggleClass("nav-active");
+	});
+
 	$(".work-nav-link").click(function(){
 		$(".nav-page-link").toggleClass("nav-page-link-open");
 		$(".work-nav-link").toggleClass("nav-active");
 		$(".mobile-nav-project-column").toggleClass("mnpc-open");
+	});
+
+	$(".about-nav-link").click(function(){
+		$(".about-nav-link").toggleClass("nav-active");
+	});
+
+	$(".contact-nav-link").click(function(){
+		$(".contact-nav-link").toggleClass("nav-active");
 	});
 
 });
