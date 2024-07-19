@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-	$('#nav-frame').load('nav.html');
+	$('#project-nav-frame').load('nav-project.html');
+	$('#home-nav-frame').load('nav-home.html');
     $('#footer-frame').load('footer.html');
 
 	$(".menu").click(function(){
