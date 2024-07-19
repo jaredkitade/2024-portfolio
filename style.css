@@ -223,7 +223,7 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		position: relative;
+		position: absolute;
 	}
 
 /*-------------------------------- HOVER / ANIMATIONS */
@@ -1183,6 +1183,22 @@
 		gap: 25px;
 	}
 
+	.featured-project-container .image-container, .project-hero-block .image-container, .full-bleed-image {
+		aspect-ratio: 21 / 9;
+	}
+
+	.secondary-project-container .image-container, .two-column-text-image .image-container, .two-up-image .image-container {
+		aspect-ratio: 16 / 9;
+	}
+
+	.featured-project-container .image-container > img, .secondary-project-container .image-container > img, .project-hero-block .image-container > img, .full-bleed-image > img {
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: auto;
+	}
+
 	.secondary-project-container {
 		display: flex;
 		flex-flow: row nowrap;
@@ -1361,6 +1377,7 @@
 		/*flex-grow: 1;
 		flex-basis: 0;*/
 		gap: 15px;
+		width: 100%;
 	}
 
 	.image-caption-container > .two-column-image {
@@ -2025,11 +2042,9 @@
 				height: auto;
 			}
 
-			.featured-project-container .image-container > img, .project-hero-block .image-container > img, .full-bleed-image > img {
-				transform: translate(-50%, -50%);
-				top: 50%;
-				left: 50%;
+			.featured-project-container .image-container > img, .secondary-project-container .image-container > img, .project-hero-block .image-container > img, .full-bleed-image > img {
 				width: auto;
+				height: 100%;
 			}
 
 			/*.featured-project-image {
@@ -2110,11 +2125,11 @@
 			}
 
 			.project-credits > ul {
-				max-height: 200px;
+				max-height: 240px;
 			}
 
 			.project-credits > ul > li {
-				width: 50%;
+				width: 48%;
 			}
 
 
