@@ -5,17 +5,111 @@
 	<title>Jared Kitade</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#project-nav-frame').load('nav-project.html');
-			$('#home-nav-frame').load('nav-home.html');
-		    $('#footer-frame').load('footer.html');
-		});
-	</script>
 </head>
 <body>
-	<div id="project-nav-frame"></div>
+	<div class="nav-container">
+	<div class="nav negative">
+		<div class="nav-default">
+			<a class="nav-item"></a>
+			<a class="nav-item link text-link name" href="./">
+				J
+				<span class="hidden-name">ared&nbsp;</span>
+				K
+				<span class="hidden-name">itade</span>
+			</a>
+			<a href="./work" class="nav-item link text-link work"></a>
+			<a href="./info" class="nav-item link text-link about"></a>
+			<a class="nav-item link text-link menu"></a>
+		</div>
+		<div class="nav-row">
+			<div class="nav-column">
+				<a href="./" class="nav-int-row link home-nav-link">
+					<div class="nav-number text-link nav-one"></div>
+					<div class="nav-lp-link text-link home"></div>
+				</a>
+				<a class="nav-int-row link work-nav-link">
+					<div class="nav-number text-link nav-two"></div>
+					<div class="nav-lp-link text-link work-menu"></div>
+				</a>
+				<a href="./info" class="nav-int-row link about-nav-link">
+					<div class="nav-number text-link nav-three"></div>
+					<div class="nav-lp-link text-link about-menu"></div>
+				</a>
+				<a href="mailto:hi@jaredkita.de" class="nav-int-row link contact-nav-link">
+					<div class="nav-number text-link nav-four"></div>
+					<div class="nav-lp-link text-link contact"></div>
+				</a>
+			</div>
+			<div class="nav-project-column">
+				<a class="nav-page-link text-link link ub23" href="./unboxed-2023"></a>
+				<a class="nav-page-link text-link link dap" href="./dap-logo-system"></a>
+				<a class="nav-page-link text-link link ub22" href="./unboxed-2022"></a>
+				<a class="nav-page-link text-link link afterpay" href="./afterpay-animations"></a>
+				<a class="nav-page-link text-link link two-step" href="./two-step-verification"></a>
+				<a class="nav-page-link text-link link virtual-ub" href="./virtual-square-unboxed"></a>
+				<a class="nav-page-link text-link link misc-square" href="./misc-square-projects"></a>
+				<a class="nav-page-link text-link link svma" href="./svma"></a>
+				<a class="nav-page-link text-link link els" href="./els"></a>
+				<a class="nav-page-link text-link link loeb" href="./loeb-fellowship"></a>
+				<a class="nav-page-link text-link link mdes" href="./mdes-showcase"></a>
+				<a class="nav-page-link text-link link concept" href="./concept-lecture-series"></a>
+				<a class="nav-page-link text-link view-all link" href="./work"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="mobile-nav-container">
+	<div class="mobile-nav negative">
+		<div class="mobile-nav-default">
+			<a class="nav-item"></a>
+			<a class="nav-item link text-link name" href="index.html">
+				J
+				<span class="hidden-name">ared&nbsp;</span>
+				K
+				<span class="hidden-name">itade</span>
+			</a>
+			<a href="./work" class="nav-item link text-link work"></a>
+			<a href="./info" class="nav-item link text-link about"></a>
+			<a class="nav-item link text-link menu"></a>
+		</div>
+		<div class="nav-row">
+			<div class="nav-column">
+				<a class="nav-int-row link">
+					<div class="nav-number text-link nav-one"></div>
+					<div class="nav-lp-link text-link home"></div>
+				</a>
+				<a class="nav-int-row link work-nav-link">
+					<div class="nav-number text-link nav-two"></div>
+					<div class="nav-lp-link text-link work-menu"></div>
+				</a>
+				<div class="mobile-nav-project-column">
+					<a class="nav-page-link link" href="./unboxed-2023">Square Unboxed 2023</a>
+					<a class="nav-page-link link" href="./dap-logo-system">DAP Logo System</a>
+					<a class="nav-page-link link" href="./unboxed-2022">Square Unboxed 2022</a>
+					<a class="nav-page-link link" href="./afterpay-animations">Afterpay Animations</a>
+					<a class="nav-page-link link" href="./two-step-verification">Two-Step Verification</a>
+					<a class="nav-page-link link" href="./virtual-square-unboxed">Virtual Square Unboxed</a>
+					<a class="nav-page-link link" href="./misc-square-projects">Misc. Square Projects</a>
+					<a class="nav-page-link link" href="./svma">SVMA</a>
+					<a class="nav-page-link link" href="./els">ELS Architecture</a>
+					<a class="nav-page-link link" href="./loeb-fellowship">Loeb Fellowship</a>
+					<a class="nav-page-link link" href="./mdes-showcase">MDES Showcase</a>
+					<a class="nav-page-link link" href="./concept-lecture-series">Concept Lecture Series</a>
+					<a class="nav-page-link link" href="./work">View All →</a>
+				</div>
+				<a class="nav-int-row link">
+					<div class="nav-number text-link nav-three"></div>
+					<div class="nav-lp-link text-link about-menu"></div>
+				</a>
+				<a class="nav-int-row link">
+					<div class="nav-number text-link nav-four"></div>
+					<div class="nav-lp-link text-link contact"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<div class="page-container project-page">
 		<div class="project-hero-block">
@@ -162,13 +256,64 @@
 		</div>
 	</div>
 
-	<div id="footer-frame"></div>
+	<div class="footer-container off">
+		<!-- <div class="footer-row">hello</div> -->
+		<div class="footer-row">
+			<a href="mailto:hi@jaredkita.de">
+				<div class="flip-container footer-email link">
+					<span class="flip">h</span>
+					<span class="flip">i</span>
+					<span class="flip">@</span>
+					<span class="flip">j</span>
+					<span class="flip">a</span>
+					<span class="flip">r</span>
+					<span class="flip">e</span>
+					<span class="flip">d</span>
+					<span class="flip">k</span>
+					<span class="flip">i</span>
+					<span class="flip">t</span>
+					<span class="flip">a</span>
+					<span class="flip">.</span>
+					<span class="flip">d</span>
+					<span class="flip">e</span>
+				</div>
+			</a>
+			<div class="footer-link-container">
+				<!-- <a href=""><div class="text-link home link"></div></a>
+				<a href=""><div class="text-link work link"></div></a>
+				<a href=""><div class="text-link about link"></div></a>
+				<a href=""><div class="text-link contact link"></div></a> -->
+				<a href="/" class="text-link footer-link footer-home link"></a>
+				<a href="./work" class="text-link footer-link footer-work link"></a>
+				<a href="./info" class="text-link footer-link footer-about link"></a>
+				<a href="./contact" class="text-link footer-link footer-contact link"></a>
+			</div>
+		</div>
+		<div class="footer-row">
+			<div class="footer-pill-container">
+				<div class="pill-container">
+					<a href="https://www.linkedin.com/in/kitade/" target="blank" class="pill text-link link linkedin"></a>
+				</div>
+				<div class="pill-container">
+					<a href="https://www.instagram.com/jaredkitade" target="blank" class="pill text-link link instagram"></a>
+				</div>
+			</div>
+			<div class="footer-pill-container">
+				<div class="pill-container">
+					<div class="pill">Design & Development by&nbsp;<span class="bold">Jared Kitade</span></div>
+				</div>
+				<div class="pill-container">
+					<div class="pill">© 2024</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="cursor-default"></div>
 </body>
 	<script src="assets/scripts/script.js"></script>
-	<!-- <script src="assets/scripts/cursor.js"></script>
+	<script src="assets/scripts/cursor.js"></script>
 	<script src="assets/scripts/nav-bar.js"></script>
-	<script src="assets/scripts/project-footer.js"></script> -->
+	<script src="assets/scripts/project-footer.js"></script>
 </html>
 

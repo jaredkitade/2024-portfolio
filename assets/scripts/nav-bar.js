@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-	$('#project-nav-frame').load('nav-project.html');
-	$('#home-nav-frame').load('nav-home.html');
-    $('#footer-frame').load('footer.html');
+	// $('#project-nav-frame').load('nav-project.html');
+	// $('#home-nav-frame').load('nav-home.html');
+    // $('#footer-frame').load('footer.html');
 
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
