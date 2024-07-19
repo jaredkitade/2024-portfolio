@@ -2042,7 +2042,7 @@
 				height: auto;
 			}
 
-			.featured-project-container .image-container > img, .secondary-project-container .image-container > img, .project-hero-block .image-container > img, .full-bleed-image > img {
+			.featured-project-container .image-container > img, .project-hero-block .image-container > img, .full-bleed-image > img {
 				width: auto;
 				height: 100%;
 			}
