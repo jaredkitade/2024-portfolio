@@ -955,6 +955,10 @@
 		content: "Remotely Remote";
 	}
 
+	.concept::before, .concept::after {
+		content: "Concept Lecture Series";
+	}
+
 	.view-all::before, .view-all::after {
 		content: "View All →";
 	}
