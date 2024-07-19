@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jared Kitade</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body class="body-black">
+	<div class="nav-container">
+		<div class="nav negative">
+			<div class="nav-default">
+				<a class="nav-item"></a>
+				<a class="nav-item link text-link name" href="./">
+					J
+					<span class="hidden-name">ared&nbsp;</span>
+					K
+					<span class="hidden-name">itade</span>
+				</a>
+				<a href="./work" class="nav-item link text-link work"></a>
+				<a href="./info" class="nav-item link text-link about"></a>
+				<a class="nav-item link text-link menu"></a>
+			</div>
+			<div class="nav-row">
+				<div class="nav-column">
+					<a href="./" class="nav-int-row link home-nav-link">
+						<div class="nav-number text-link nav-one"></div>
+						<div class="nav-lp-link text-link home"></div>
+					</a>
+					<a class="nav-int-row link work-nav-link">
+						<div class="nav-number text-link nav-two"></div>
+						<div class="nav-lp-link text-link work-menu"></div>
+					</a>
+					<a href="./info" class="nav-int-row link about-nav-link">
+						<div class="nav-number text-link nav-three"></div>
+						<div class="nav-lp-link text-link about-menu"></div>
+					</a>
+					<a href="mailto:hi@jaredkita.de" class="nav-int-row link contact-nav-link">
+						<div class="nav-number text-link nav-four"></div>
+						<div class="nav-lp-link text-link contact"></div>
+					</a>
+				</div>
+				<div class="nav-project-column">
+					<a class="nav-page-link text-link link ub23" href=""></a>
+					<a class="nav-page-link text-link link dap" href=""></a>
+					<a class="nav-page-link text-link link ub22" href=""></a>
+					<a class="nav-page-link text-link link afterpay" href=""></a>
+					<a class="nav-page-link text-link link two-step" href=""></a>
+					<a class="nav-page-link text-link link virtual-ub" href=""></a>
+					<a class="nav-page-link text-link link misc-square" href=""></a>
+					<a class="nav-page-link text-link link svma" href=""></a>
+					<a class="nav-page-link text-link link els" href=""></a>
+					<a class="nav-page-link text-link link loeb" href=""></a>
+					<a class="nav-page-link text-link link mdes" href=""></a>
+					<a class="nav-page-link text-link link remotely" href=""></a>
+					<!-- <div class="gap"></div> -->
+					<a class="nav-page-link text-link view-all link" href="./work"></a>
+				</div>
+			</div>
+			<!-- <div class="nav-row">
+				<div class="pill-container">
+					<a class="pill text-link link email"></a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+	<div class="mobile-nav-container">
+		<div class="mobile-nav negative">
+			<div class="mobile-nav-default">
+				<a class="nav-item"></a>
+				<a class="nav-item link text-link name" href="index.html">
+					J
+					<span class="hidden-name">ared&nbsp;</span>
+					K
+					<span class="hidden-name">itade</span>
+				</a>
+				<a href="./work" class="nav-item link text-link work"></a>
+				<a href="./info" class="nav-item link text-link about"></a>
+				<a class="nav-item link text-link menu"></a>
+			</div>
+			<div class="nav-row">
+				<div class="nav-column">
+					<a class="nav-int-row link">
+						<div class="nav-number text-link nav-one"></div>
+						<div class="nav-lp-link text-link home"></div>
+					</a>
+					<a class="nav-int-row link work-nav-link">
+						<div class="nav-number text-link nav-two"></div>
+						<div class="nav-lp-link text-link work-menu"></div>
+					</a>
+					<div class="mobile-nav-project-column">
+						<a class="nav-page-link link" href="">Square Unboxed 2023</a>
+						<a class="nav-page-link link" href="">DAP Logo System</a>
+						<a class="nav-page-link link" href="">Square Unboxed 2022</a>
+						<a class="nav-page-link link" href="">Afterpay Animations</a>
+						<a class="nav-page-link link" href="">Two-Step Verification</a>
+						<a class="nav-page-link link" href="">Virtual Square Unboxed</a>
+						<a class="nav-page-link link" href="">Misc. Square Projects</a>
+						<a class="nav-page-link link" href="">SVMA</a>
+						<a class="nav-page-link link" href="">ELS Architecture</a>
+						<a class="nav-page-link link" href="">Loeb Fellowship</a>
+						<a class="nav-page-link link" href="">MDES Showcase</a>
+						<a class="nav-page-link link" href="">Remotely Remote</a>
+						<!-- <div class="gap"></div> -->
+						<a class="nav-page-link link" href="./work">View All →</a>
+					</div>
+					<a class="nav-int-row link">
+						<div class="nav-number text-link nav-three"></div>
+						<div class="nav-lp-link text-link about-menu"></div>
+					</a>
+					<a class="nav-int-row link">
+						<div class="nav-number text-link nav-four"></div>
+						<div class="nav-lp-link text-link contact"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="home-page-hero">
+
+		<div class="home-page-hero-name">
+			<span class="flip-load">J</span>
+			<span class="flip-load">a</span>
+			<span class="flip-load">r</span>
+			<span class="flip-load">e</span>
+			<span class="flip-load">d</span>
+		</div>
+
+		<div class="home-page-hero-name">
+			<span class="flip-load">K</span>
+			<span class="flip-load">i</span>
+			<span class="flip-load t">t</span>
+			<span class="flip-load">a</span>
+			<span class="flip-load">d</span>
+			<span class="flip-load">e</span>
+		</div>
+
+		<div class="hero-svg spin-animation">
+			<svg width="350" height="350" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+				    <radialGradient
+				      id="GradientReflect"
+				      cx="0.5"
+				      cy="0.5"
+				      r="0.4"
+				      fx="0.75"
+				      fy="0.75"
+				      spreadMethod="reflect">
+				      <stop offset="0%" stop-color="red" />
+				      <stop offset="100%" stop-color="#32C8AA" />
+				    </radialGradient>
+				</defs>
+				<path d="M175 0C163.954 0 155 8.9543 155 20V126.716L79.5405 51.2563C71.73 43.4458 59.0667 43.4458 51.2563 51.2563C43.4458 59.0668 43.4458 71.7301 51.2563 79.5406L126.716 155H20C8.95431 155 0 163.954 0 175C0 186.046 8.9543 195 20 195H126.716L51.2563 270.459C43.4458 278.27 43.4458 290.933 51.2563 298.744C59.0668 306.554 71.7301 306.554 79.5406 298.744L155 223.284V330C155 341.046 163.954 350 175 350C186.046 350 195 341.046 195 330V223.284L270.459 298.744C278.27 306.554 290.933 306.554 298.744 298.744C306.554 290.933 306.554 278.27 298.744 270.459L223.284 195H330C341.046 195 350 186.046 350 175C350 163.954 341.046 155 330 155H223.284L298.744 79.5406C306.554 71.7301 306.554 59.0668 298.744 51.2563C290.933 43.4458 278.27 43.4458 270.459 51.2563L195 126.716V20C195 8.95431 186.046 0 175 0Z" fill="url(#GradientReflect)"/>
+			</svg>
+		</div>
+	</div>
+
+	<div class="home-page page-container">
+		<div class="featured-project-container">
+			<div class="project-tile">
+				<div class="project-heading">
+					<div class="project-label">
+						<p>01/</p>
+						<p>Featured Project</p>
+						<!-- <p>↘</p> -->
+					</div>
+					<div class="rule"></div>
+					<div class="project-categories">
+						<p class="main-category">Brand Design</p>
+						<p class="secondary-category">Motion Design</p>
+						<p class="secondary-category">Design Systems</p>
+					</div>
+				</div>	
+				<a href="project-page-template.html" class="link">
+					<!-- <h2>Project Title</h2> -->
+					<div class="image-container featured-project-image">
+						<img src="assets/images/fpo/FPO_Image_Featured_Project.png">
+					</div>
+					<h2>Project Title</h2>
+				</a>
+			</div>
+		</div>
+		<div class="featured-project-container">
+			<div class="project-tile">
+				<div class="project-heading">
+					<div class="project-label">
+						<p>01/</p>
+						<p>Featured Project</p>
+						<!-- <p>↘</p> -->
+					</div>
+					<div class="rule"></div>
+					<div class="project-categories">
+						<p class="main-category">Brand Design</p>
+						<p class="secondary-category">Motion Design</p>
+						<p class="secondary-category">Design Systems</p>
+					</div>
+				</div>	
+				<a href="project-page-template.html" class="link">
+					<!-- <h2>Project Title</h2> -->
+					<div class="image-container featured-project-image">
+						<img src="assets/images/fpo/FPO_Image_Featured_Project.png">
+					</div>
+					<h2>Project Title</h2>
+				</a>
+			</div>
+		</div>
+		<div class="secondary-project-container">
+			<div class="project-tile">
+				<div class="project-heading">
+					<div class="project-label">
+						<p>01/</p>
+					</div>
+					<div class="rule"></div>
+					<div class="project-categories">
+						<p class="main-category">Brand Design</p>
+					</div>
+				</div>
+				<a href="project-page-template.html" class="link">
+					<!-- <h3>Project Title</h3> -->
+					<div class="image-container secondary-project-image">
+						<img src="assets/images/fpo/FPO_Image_2_column.png">
+					</div>
+					<h3>Project Title</h3>
+				</a>
+			</div>
+			<div class="project-tile">
+				<div class="project-heading">
+					<div class="project-label">
+						<p>01/</p>
+					</div>
+					<div class="rule"></div>
+					<div class="project-categories">
+						<p class="main-category">Brand Design</p>
+					</div>
+				</div>	
+				<a href="project-page-template.html" class="link">
+					<!-- <h3>Project Title</h3> -->
+					<div class="image-container secondary-project-image">
+						<img src="assets/images/fpo/FPO_Image_2_column.png">
+					</div>
+					<h3>Project Title</h3>
+				</a>
+			</div>	
+		</div>
+	</div>
+
+	<div class="footer-container off">
+		<!-- <div class="footer-row">hello</div> -->
+		<div class="footer-row">
+			<a href="mailto:hi@jaredkita.de">
+				<div class="flip-container footer-email link">
+					<span class="flip">h</span>
+					<span class="flip">i</span>
+					<span class="flip">@</span>
+					<span class="flip">j</span>
+					<span class="flip">a</span>
+					<span class="flip">r</span>
+					<span class="flip">e</span>
+					<span class="flip">d</span>
+					<span class="flip">k</span>
+					<span class="flip">i</span>
+					<span class="flip">t</span>
+					<span class="flip">a</span>
+					<span class="flip">.</span>
+					<span class="flip">d</span>
+					<span class="flip">e</span>
+				</div>
+			</a>
+			<div class="footer-link-container">
+				<!-- <a href=""><div class="text-link home link"></div></a>
+				<a href=""><div class="text-link work link"></div></a>
+				<a href=""><div class="text-link about link"></div></a>
+				<a href=""><div class="text-link contact link"></div></a> -->
+				<a href="/" class="text-link footer-link footer-home link"></a>
+				<a href="./work" class="text-link footer-link footer-work link"></a>
+				<a href="./info" class="text-link footer-link footer-about link"></a>
+				<a href="./contact" class="text-link footer-link footer-contact link"></a>
+			</div>
+		</div>
+		<div class="footer-row">
+			<div class="footer-pill-container">
+				<div class="pill-container">
+					<a href="https://www.linkedin.com/in/kitade/" target="blank" class="pill text-link link linkedin"></a>
+				</div>
+				<div class="pill-container">
+					<a href="https://www.instagram.com/jaredkitade" target="blank" class="pill text-link link instagram"></a>
+				</div>
+			</div>
+			<div class="footer-pill-container">
+				<div class="pill-container">
+					<div class="pill">Design & Development by&nbsp;<span class="bold">Jared Kitade</span></div>
+				</div>
+				<div class="pill-container">
+					<div class="pill">© 2024</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="cursor"><div class="inner-cursor"></div></div> -->
+	<div class="cursor-default"></div>
+	<div class="cursor-view-project">
+		<span class="view-project"></span>
+		<span class="arrow-container">
+			<span class="arrow"></span>
+		</span>
+	</div>
+</body>
+	<script src="assets/scripts/script.js"></script>
+	<script src="assets/scripts/cursor.js"></script>
+	<script src="assets/scripts/nav-bar.js"></script>
+	<script src="assets/scripts/home-footer.js"></script>
+</html>
+

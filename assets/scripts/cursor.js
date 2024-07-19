@@ -33,25 +33,15 @@ $(document).ready(function () {
             });
         });
 
-    $(".featured-project-tile>a")
+    $(".project-tile>a")
         .mouseenter(function() {
-            cursor.addClass('cursor-learn-more');
+            cursor.addClass('cursor-view-project');
             // cursor.removeClass('cursor-default');
         })
         .mouseleave(function() {
-            cursor.removeClass('cursor-learn-more');
+            cursor.removeClass('cursor-view-project');
             // cursor.addClass('cursor-default');
         });   
-
-    $(".secondary-project-tile>a")
-        .mouseenter(function() {
-            cursor.addClass('cursor-learn-more');
-            // cursor.removeClass('cursor-default');
-        })
-        .mouseleave(function() {
-            cursor.removeClass('cursor-learn-more');
-            // cursor.addClass('cursor-default');
-        });    
 
     $(window)
         .mousedown(function() {
