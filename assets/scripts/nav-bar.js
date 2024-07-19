@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-	$('.nav-frame').load('nav.html');
-    $('.footer-frame').load('footer.html');
+	$('#nav-frame').load('nav.html');
+    $('#footer-frame').load('footer.html');
 
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
