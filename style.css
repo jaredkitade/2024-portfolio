@@ -961,10 +961,14 @@
 	}
 
 	.view-all {
-		font-family: var(--body-font-bold);
+		font-family: var(--body-font-bold) !important;
 		/*padding: 15px 35px;
 		border: 1px solid var(--neutral);
 		border-radius: 100em;*/
+	}
+
+	.mobile-nav .view-all::before, .mobile-nav .view-all::after {
+		content: none;
 	}
 
 	.email::after, .email::before {
