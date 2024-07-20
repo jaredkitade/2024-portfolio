@@ -17,9 +17,6 @@ $(document).ready(function () {
 
 
 
-
-
-
 	// const labels = document.querySelectorAll('.label-hide');
 	// const rules = document.querySelectorAll('.rule');
 	// const categories = document.querySelectorAll('.project-categories>p');
@@ -52,7 +49,9 @@ $(document).ready(function () {
 	
 	// const observer = new IntersectionObserver(animation)
 	// divs.forEach((div) => observer.observe(div));
-	
+
+
+
 
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
@@ -104,7 +103,7 @@ $(document).keyup(function(e) {
 		if ($(".nav-item").hasClass("nav-item-open")) {$(".nav-item").removeClass("nav-item-open")};
 		if ($(".menu").hasClass("close-menu")) {$(".menu").removeClass("close-menu")};
 		if ($(".work").hasClass("nav-item-off")) {$(".work").removeClass("nav-item-off")};
-		if ($(".about").hasClass("nav-item-off")) {$(".menu").removeClass("nav-item-off")};
+		if ($(".about").hasClass("nav-item-off")) {$(".about").removeClass("nav-item-off")};
 		if ($("body").hasClass("no-scroll")) {$("body").removeClass("no-scroll")};
 		if ($("body").hasClass("body-menu")) {$("body").removeClass("body-menu")};
 		if ($(".page-container").hasClass("blackout")) {$(".page-container").removeClass("blackout")};
@@ -116,3 +115,8 @@ $(document).keyup(function(e) {
 		if ($(".nav-lp-link").hasClass("nav-main-link-open")) {$(".nav-lp-link").removeClass("nav-main-link-open")};		
 	}
 });
+
+
+
+
+
