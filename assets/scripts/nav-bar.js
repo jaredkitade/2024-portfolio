@@ -1,8 +1,58 @@
 $(document).ready(function () {
 
-	// $('#project-nav-frame').load('nav-project.html');
-	// $('#home-nav-frame').load('nav-home.html');
-    // $('#footer-frame').load('footer.html');
+	// const observer = new IntersectionObserver(entries => {
+	// 	entries.forEach(entry => {
+	// 		if (entry.isIntersecting) {
+	// 			entry.target.classList.add('rule-full');
+	// 			return;
+	// 		}
+
+	// 		entry.target.classList.remove('rule-full');
+	// 	});
+	// });
+
+	// const rules = document.querySelectorAll('.rule');
+
+	// rules.forEach((element) => observer.observe(element));
+
+
+
+
+
+
+	// const labels = document.querySelectorAll('.label-hide');
+	// const rules = document.querySelectorAll('.rule');
+	// const categories = document.querySelectorAll('.project-categories>p');
+
+	// const divs = [labels, rules, categories];
+
+	// function animation(entires) {
+	// 	entires.forEach(entry => {
+	// 		if (entry.isIntersecting) {
+	// 			if (entry.target.classList.contains('.label-hide')) {
+	// 				entry.target.classList.add('label-full');
+	// 				return;
+	// 			}
+
+	// 			entry.target.classList.remove('label-full');
+
+	// 			if (entry.target.classList.contains('rule')) {
+	// 				entry.target.classList.add('rule-full');
+	// 				return;
+	// 			}
+
+	// 			entry.target.classList.remove('rule-full');
+
+	// 			if (entry.target.classList.contains('.project-categories>p')) {
+	// 				entry.target.style.transform = 'skew(10deg)'
+	// 			}
+	// 		}
+	// 	})
+	// }
+	
+	// const observer = new IntersectionObserver(animation)
+	// divs.forEach((div) => observer.observe(div));
+	
 
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");

@@ -2,8 +2,8 @@ $(document).ready(function () {
 
 		$(window).scroll(function() {
 	        var scroll = $(window).scrollTop();
-	        var offset = $(".home-page-hero").offset().top;
-	        var height = $(".home-page-hero").height();
+	        var offset = $(".page-hero").offset().top;
+	        var height = $(".page-hero").height();
 	        var pageOffset = $(".page-container").offset().top;
 	        var pageHeight = $(".page-container").height();
 	        
@@ -42,7 +42,7 @@ $(document).ready(function () {
 	    $(window).on('scroll', function(){
 
 			// var contentTop = $('.page-container').offset().top;
-			var hHeight = $('.home-page-hero').height();
+			var hHeight = $('.page-hero').height();
 
 			if($(this).scrollTop() > hHeight + 45){
 				$('.nav').removeClass('negative');
@@ -51,10 +51,10 @@ $(document).ready(function () {
 			}
 
 			if($(this).scrollTop() > hHeight + 150){
-				$('.home-page-hero').addClass('off');
+				$('.page-hero').addClass('off');
 				$('.footer-container').removeClass('off');
 			} else{
-				$('.home-page-hero').removeClass('off');
+				$('.page-hero').removeClass('off');
 				$('.footer-container').addClass('off');
 			}
 
