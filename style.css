@@ -1366,7 +1366,7 @@
 		color: var(--brand-color-01);
 		border-radius: 100em;
 		padding: .5vh 2vw;
-		height: 100%;
+/*		height: 100%;*/
 		transition: .5s;
 	}
 
