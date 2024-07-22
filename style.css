@@ -156,6 +156,7 @@
 
 	.color-01 {
 		color: var(--brand-color-01);
+		transition: .5s;
 	}
 
 /*-------------------------------- HEADINGS --------------------------------*/
@@ -1334,18 +1335,17 @@
 		flex-flow: column nowrap;
 		width: 100vw;
 		height: 100vh;
+		color: var(--neutral);
 		background-color: var(--black);
+/*		background-color: var(--brand-color-01);*/
 		justify-content: center;
 		gap: 5vh !important;
 		z-index: -1;
+		border-radius: 0 0 25px 25px;
 	}
 
 	.info-container > div {
 		padding: 0px 50px;
-	}
-
-	.info-page {
-		color: var(--neutral) !important;
 	}
 
 	.info-text {
@@ -1355,7 +1355,6 @@
 	}
 
 	.info-secondary-text {
-		color: var(--neutral) !important;
 		font-size: 1.5vw;
 	}
 
@@ -1364,9 +1363,11 @@
 		flex-flow: column nowrap;
 		gap: 100%;
 		border: 1px solid var(--brand-color-01);
+		color: var(--brand-color-01);
 		border-radius: 100em;
 		padding: .5vh 2vw;
-		height: 100%:;
+		height: 100%;
+		transition: .5s;
 	}
 
 	.design-type {
@@ -1376,7 +1377,6 @@
 		gap: 100%;
 		overflow: hidden;
 		position: relative;
-		color: var(--brand-color-01);
 	}
 
 	.design-type::before {
@@ -2193,7 +2193,7 @@
 				margin-bottom: 0;
 			}
 
-		/*-------------------------------- HOME PAGE - MOBILE */
+		/*-------------------------------- INFO PAGE - MOBILE */
 
 			.info-container {
 				height: auto;
