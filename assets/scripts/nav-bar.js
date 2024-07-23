@@ -51,8 +51,6 @@ $(document).ready(function () {
 	// divs.forEach((div) => observer.observe(div));
 
 
-
-
 	$(".menu").click(function(){
 		$(".nav").toggleClass("nav-open");
 		$(".mobile-nav").toggleClass("mobile-nav-open");
