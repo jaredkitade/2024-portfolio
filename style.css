@@ -2017,6 +2017,10 @@
 				height: 145% !important;
 			}
 
+			img.dap-hero {
+				left: 109%;
+			}
+
 		/*-------------------------------- NAV - MOBILE */
 
 			.nav-container {
